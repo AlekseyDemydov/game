@@ -89,12 +89,15 @@
     text-transform: uppercase;
   }
   .agree {
-    padding-top: 207px;
+    margin-top: auto;
     display: flex;
     flex-direction: column;
     background-image: url(../images/firstgirlmob.png);
     background-repeat: no-repeat;
 background-position: center;
+  }
+  .btnBox{
+    padding-top: 207px;
   }
   .btn {
     color: #fff;

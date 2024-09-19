@@ -1,0 +1,132 @@
+.container {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  height: 100vh;
+}
+.first {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.sound{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    position: absolute;
+    top: 26px;
+    right: 11px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+.soundButton{
+    width: 100%;
+}
+@media (min-width: 360px) and (max-width: 420px) {
+  .first {
+    background-image: url(../images/firstmob.png);
+    padding: 21px 26px 0;
+  }
+  .upTitleBox {
+    display: flex;
+    width: 258px;
+    padding: 6px 15px 6px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+  }
+  .upTitle {
+    color: var(--text-white, #fff);
+    text-align: center;
+    font-family: 'Nirmala UI';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+  }
+  .title {
+    text-align: center;
+    text-shadow: 0px 4px 20px rgba(255, 213, 54, 0.5);
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #fff;
+    font-family: 'Nirmala UI';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+    text-transform: uppercase;
+    background: var(
+      --text_style,
+      linear-gradient(130deg, #eb5d38 31.89%, #ffd600 92.03%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 0 10px 0;
+  }
+  .description {
+    color: #fff2ce;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nirmala UI';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 14.4px */
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+  }
+  .agree {
+    padding-top: 207px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/firstgirlmob.png);
+    background-repeat: no-repeat;
+background-position: center;
+  }
+  .btn {
+    color: #fff;
+    display: flex;
+    width: 330px;
+    padding: 16px 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Nirmala UI';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 24px */
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .continue {
+    background: var(
+      --Button_gradient,
+      linear-gradient(103deg, #ffe53b -32.17%, #ff2525 114.07%)
+    );
+    box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+    margin-bottom: 10px;
+  }
+  .no {
+    background-color: #00000000;
+    border: 1px solid #fff;
+    box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.4);
+    margin-bottom: 18px;
+  }
+}

@@ -6,7 +6,8 @@
   height: 100vh;
 }
 .first,
-.second, .third {
+.second,
+.third {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -33,11 +34,12 @@
   display: none;
 }
 .third {
-    display: none;
-  }
+  display: none;
+}
 @media (min-width: 360px) and (max-width: 420px) {
   .first,
-  .second, .third {
+  .second,
+  .third {
     background-image: url(../images/firstmob.png);
     padding: 21px 26px 0;
   }
@@ -105,14 +107,25 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  .agreeThird {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/thirdgirlmob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .btnBox {
     padding-top: 207px;
+  }
+  .btnBoxThird {
+    padding-top: 330px;
   }
   .btn {
     color: #fff;
     display: flex;
     width: 330px;
-    padding: 16px 100px;
+    padding: 16px 80px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -187,16 +200,15 @@
     text-align: center; /* Центрування тексту */
     border-radius: 20px;
     border: 1px solid #fff;
-padding: 22px 27px;
+    padding: 22px 27px;
     background: rgba(255, 255, 255, 0.2);
 
     backdrop-filter: blur(5px);
   }
 
-  .slide img{
+  .slide img {
     width: 100%;
   }
-
 
   .text {
     color: #fff;
@@ -218,7 +230,7 @@ padding: 22px 27px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     width: 51px;
-height: 45px;
+    height: 45px;
     cursor: pointer;
     z-index: 100;
     font-size: 18px;
@@ -241,6 +253,5 @@ height: 45px;
     background-size: contain;
     background-repeat: no-repeat;
     transform: translateY(-50%) rotate(180deg);
-    
   }
 }

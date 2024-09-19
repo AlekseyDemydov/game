@@ -6,7 +6,7 @@
   height: 100vh;
 }
 .first,
-.second {
+.second, .third {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -32,9 +32,12 @@
 .second {
   display: none;
 }
+.third {
+    display: none;
+  }
 @media (min-width: 360px) and (max-width: 420px) {
   .first,
-  .second {
+  .second, .third {
     background-image: url(../images/firstmob.png);
     padding: 21px 26px 0;
   }
